@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
-	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2024-08-02T17:57:08.374350010"/>
-	<style type="text/css">
-		@page { size: 21cm 29.7cm; margin-left: 2cm; margin-right: 1cm; margin-top: 1cm; margin-bottom: 1cm }
-		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
-		h1 { margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
-		h1.western { font-family: "Liberation Serif", serif; font-size: 24pt; font-weight: bold }
-		h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 24pt; font-weight: bold }
-		h1.ctl { font-family: "Lohit Devanagari"; font-size: 24pt; font-weight: bold }
-		h2 { margin-top: 0.35cm; margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
-		h2.western { font-family: "Liberation Serif", serif; font-size: 18pt; font-weight: bold }
-		h2.cjk { font-family: "Noto Serif CJK SC"; font-size: 18pt; font-weight: bold }
-		h2.ctl { font-family: "Lohit Devanagari"; font-size: 18pt; font-weight: bold }
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jitendra's Portfolio</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
 </head>
-<body lang="en-IN" link="#000080" vlink="#800000" dir="ltr"><h1 class="western">
-Hey, I'm Jitendra</h1>
-<h2 class="western">About me</h2>
-<p>I am just a collage sudent who likes tech. 
-</p>
-<h2 class="western">What I'm working on</h2>
-<p> Still Learning...</p>
+<body>
+    <header>
+        <h1>Jitendra</h1>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am just a college student who likes tech.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Photography</h2>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*">
+            <input type="submit" value="Upload">
+        </form>
+        <div id="uploaded-images"></div>
+    </section>
+
+    <section id="work-in-progress">
+        <h2>What I'm Working On</h2>
+        <p>Still Learning...</p>
+    </section>
 </body>
 </html>
